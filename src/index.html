@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Résumé — Harsh Giri</title>
+<meta name="description" content="Harsh Giri — Agentic AI Engineer. Experience, projects, skills and certifications." />
+<meta name="author" content="Harsh Giri" />
+<meta name="theme-color" content="#F1ECE3" />
+<link rel="canonical" href="https://resume.harshgiri.site/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://resume.harshgiri.site/" />
+<meta property="og:title" content="Résumé — Harsh Giri" />
+<meta property="og:description" content="Agentic AI engineer: experience, open source, projects, hackathons and certifications. Download the PDF." />
+<meta property="og:image" content="https://resume.harshgiri.site/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="preload" href="/ds/v1/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/ds/v1/fonts.css" />
+<link rel="stylesheet" href="/ds/v1/hg.css" />
+<script src="/ds/v1/core.js"></script>
+<script src="resume.js"></script>
+<style>
+.rhero { padding: 20vh var(--g) 6vh; }
+.rhero h1 { margin: 0; font-size: clamp(72px, 13vw, 220px); }
+.rhero .role { margin: 18px 0 0; font: 300 clamp(22px, 2.4vw, 36px)/1.2 var(--sans); font-variation-settings: "wdth" 110; }
+.rhero .role b { font-weight: 700; }
+.tldr { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 6vh; }
+.tldr div { border: 1.5px solid var(--fg); border-radius: 18px; padding: 16px 18px; background: var(--card); }
+.tldr div:first-child { background: var(--acc); color: var(--on-acc); border-color: var(--acc); }
+.tldr b { display: block; font: 800 clamp(34px, 3.4vw, 54px)/.9 var(--sans); font-variation-settings: "wdth" 74; letter-spacing: -.03em; }
+.tldr span { display: block; margin-top: 8px; font: 500 11px/1.35 var(--mono); letter-spacing: .08em; text-transform: uppercase; opacity: .75; }
+@media (max-width: 860px) { .tldr { grid-template-columns: repeat(2, 1fr); } }
+
+.lay { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 4vw; padding: 4vh var(--g) 16vh; max-width: 1400px; margin: 0 auto; }
+@media (max-width: 1000px) { .lay { grid-template-columns: minmax(0, 1fr); } }
+@media (min-width: 1101px) { .lay { padding-left: max(var(--g), 118px); } }
+.rhero h1 { overflow-wrap: normal; word-break: keep-all; }
+@media (max-width: 600px) { .rhero h1 { font-size: 21vw; } }
+.rail { position: sticky; top: 90px; align-self: start; display: grid; gap: 22px; }
+@media (max-width: 1000px) { .rail { position: static; } }
+.contact { display: grid; gap: 8px; }
+.contact a, .contact span { display: flex; gap: 10px; align-items: center; font: 500 13px var(--mono); padding: 8px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); transition: border-color .2s, transform .3s var(--pop); }
+.contact a:hover { border-color: var(--fg); transform: translateX(4px); }
+.contact .dd { width: 18px; height: 18px; }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.actions .btn { justify-content: center; padding: 0 12px; }
+.actions .btn.w { grid-column: 1 / -1; }
+.toc { display: grid; gap: 2px; border-left: 1.5px solid var(--line); }
+.toc a { padding: 7px 0 7px 14px; margin-left: -1.5px; border-left: 1.5px solid transparent; color: var(--mid); font: 600 11px var(--mono); letter-spacing: .16em; text-transform: uppercase; transition: color .2s, border-color .2s, padding .3s var(--ease); }
+.toc a.on { color: var(--fg); border-color: var(--acc); padding-left: 20px; }
+@media (max-width: 1000px) { .toc { display: none; } }
+.tg { display: flex; align-items: center; justify-content: space-between; gap: 10px; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; background: var(--card); cursor: pointer; font: 600 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; }
+.tg i { width: 34px; height: 20px; border-radius: 999px; background: var(--dim); position: relative; transition: background .25s; flex: none; }
+.tg i::after { content: ""; position: absolute; left: 3px; top: 3px; width: 14px; height: 14px; border-radius: 50%; background: var(--fg); transition: transform .3s var(--pop); }
+.tg[aria-pressed="true"] i { background: var(--acc); } .tg[aria-pressed="true"] i::after { transform: translateX(14px); }
+
+.sheet { background: var(--card); border: 1.5px solid var(--fg); border-radius: 26px; padding: clamp(22px, 4vw, 56px); display: grid; gap: 7vh; }
+.sec h2 { margin: 0 0 22px; display: flex; align-items: baseline; gap: 14px; font: 800 clamp(30px, 3vw, 46px)/1 var(--sans); font-variation-settings: "wdth" 86; text-transform: uppercase; letter-spacing: -.015em; padding-bottom: 12px; border-bottom: 1.5px solid var(--fg); }
+.sec h2 small { font: 500 11px var(--mono); letter-spacing: .2em; color: var(--mid); }
+.item { padding: 18px 0 22px; border-bottom: 1px solid var(--line); display: grid; gap: 10px; }
+.item:last-child { border-bottom: 0; }
+.ih { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.ih h3 { margin: 0; font: 800 clamp(20px, 1.8vw, 26px)/1.15 var(--sans); font-variation-settings: "wdth" 92; letter-spacing: -.01em; }
+.ih h3 span { font-weight: 400; color: var(--mid); }
+.ih .w { color: var(--mid); white-space: nowrap; }
+.st { color: var(--mid); font: 500 12.5px var(--mono); }
+.ilinks { display: flex; gap: 8px; flex-wrap: wrap; }
+.ilinks a { display: inline-flex; gap: 6px; align-items: center; font: 600 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; border: 1px solid var(--line); border-radius: 999px; padding: 5px 11px; transition: background .2s, border-color .2s; }
+.ilinks a:hover { background: var(--acc); border-color: var(--acc); color: var(--on-acc); }
+.ilinks .dd { width: 14px; height: 14px; }
+ul.bl { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+ul.bl li { position: relative; padding: 6px 10px 6px 26px; font-size: 16px; line-height: 1.6; border-radius: 10px; transition: background .3s, opacity .3s; }
+ul.bl li::before { content: ""; position: absolute; left: 10px; top: 17px; width: 6px; height: 6px; border-radius: 50%; background: var(--fg); }
+ul.bl li b { font-weight: 700; }
+body.nums ul.bl li b, body.nums .tldr b { background: linear-gradient(var(--acc), var(--acc)) no-repeat 0 88% / 100% 42%; color: #121211; }
+[data-theme="dark"] body.nums ul.bl li b { color: var(--fg); background: none; box-shadow: inset 0 -.45em 0 #B8FF3C55; }
+body.filtering ul.bl li { opacity: .28; }
+body.filtering ul.bl li.hit { opacity: 1; background: color-mix(in srgb, var(--acc) 22%, transparent); }
+.skg { display: grid; gap: 18px; }
+.skg h3 { margin: 0 0 10px; color: var(--mid); }
+.skills { display: flex; flex-wrap: wrap; gap: 6px; }
+.skills button { border: 1px solid var(--line); background: var(--bg); border-radius: 999px; padding: 6px 12px; font: 500 12.5px var(--mono); cursor: pointer; transition: background .2s, border-color .2s, transform .3s var(--pop); }
+.skills button.ev { border-color: var(--fg); }
+.skills button.ev::after { content: " ●"; font-size: 8px; vertical-align: 2px; color: var(--mid); }
+.skills button:hover { transform: translateY(-2px); border-color: var(--fg); }
+.skills button[aria-pressed="true"] { background: var(--acc); border-color: var(--acc); color: var(--on-acc); }
+.fnote { color: var(--mid); margin-top: 6px; }
+.fbar { position: fixed; left: 50%; bottom: 22px; translate: -50% 0; z-index: 40; background: var(--fg); color: var(--bg); border-radius: 999px; padding: 10px 10px 10px 18px; display: flex; gap: 12px; align-items: center; font: 600 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; opacity: 0; pointer-events: none; transform: translateY(20px); transition: opacity .3s, transform .4s var(--pop); }
+.fbar.on { opacity: 1; pointer-events: auto; transform: none; }
+.fbar button { border: 0; background: var(--acc); color: #121211; border-radius: 999px; padding: 8px 12px; font: inherit; cursor: pointer; }
+.ach { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.ach div { border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: grid; gap: 6px; background: var(--bg); }
+.ach b { font: 800 17px/1.2 var(--sans); } .ach span { font: 400 12.5px/1.45 var(--mono); color: var(--mid); }
+.certs2 { display: grid; gap: 10px; }
+.certs2 a { display: flex; justify-content: space-between; gap: 12px; align-items: center; border: 1.5px solid var(--fg); border-radius: 16px; padding: 14px 16px; transition: transform .3s var(--pop), box-shadow .3s; }
+.certs2 a:hover { transform: translate(-3px, -3px); box-shadow: 4px 5px 0 var(--fg); }
+.certs2 b { font: 800 18px/1.2 var(--sans); } .certs2 small { display: block; font: 500 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--mid); margin-top: 4px; }
+.toast { position: fixed; left: 50%; top: 84px; translate: -50% 0; background: var(--acc); color: #121211; border: 1.5px solid #121211; border-radius: 999px; padding: 8px 16px; font: 600 12px var(--mono); z-index: 90; opacity: 0; transition: opacity .3s; pointer-events: none; }
+.toast.on { opacity: 1; }
+
+/* print: a clean one-column ink-on-white document */
+@media print {
+  @page { size: A4; margin: 12mm 14mm; }
+  html, body { background: #fff !important; color: #000 !important; }
+  .top, .side, .dot, .rail, .rhero .tldr, .fbar, .toast, .noprint, .ilinks .dd { display: none !important; }
+  .rhero { padding: 0 0 8px; } .rhero h1 { font-size: 34px; } .rhero .role { font-size: 14px; margin-top: 4px; }
+  .printc { display: block !important; font: 400 10px var(--mono); margin-top: 6px; }
+  .lay { display: block; padding: 0; } .sheet { border: 0; padding: 0; gap: 14px; background: #fff; }
+  .sec h2 { font-size: 15px; margin-bottom: 6px; padding-bottom: 3px; border-bottom-width: 1px; }
+  .item { padding: 6px 0; gap: 3px; border: 0; } .ih h3 { font-size: 12.5px; } .st, .ih .w { font-size: 9.5px; }
+  ul.bl { gap: 2px; } ul.bl li { font-size: 10px; line-height: 1.4; padding: 0 0 0 12px; } ul.bl li::before { left: 2px; top: 6px; width: 3px; height: 3px; background: #000; }
+  ul.bl li b { background: none !important; }
+  .skills button { border: 0; padding: 0; font-size: 9.5px; background: none; } .skills button::after { content: "," !important; color: #000 !important; font-size: 9.5px !important; vertical-align: 0 !important; }
+  .skg { gap: 4px; } .skg h3 { margin: 0; font-size: 9px; }
+  .ach { grid-template-columns: 1fr 1fr; gap: 2px; } .ach div { border: 0; padding: 0; } .ach b { font-size: 10px; } .ach span { font-size: 9px; }
+  .certs2 a { border: 0; padding: 0; } .certs2 b { font-size: 10.5px; } .certs2 small { font-size: 9px; }
+  a { text-decoration: none; }
+}
+.printc { display: none; }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<div class="fbar" id="fbar"><span id="ftext"></span><button type="button" id="fclear">Clear</button></div>
+<div class="toast" id="toast">Email copied</div>
+<script src="/vendor/gsap.min.js"></script>
+<script src="/vendor/ScrollTrigger.min.js"></script>
+<script src="/vendor/SplitText.min.js"></script>
+<script src="/ds/v1/hg.js"></script>
+<script>
+const { dd, esc: e, $, $$ } = HG, R = window.RESUME, C = window.CONTENT, RM = window.RM;
+HG.chrome({ nav: [["Home", C.sites.home], ["Projects", C.sites.projects], ["Résumé", "#"], ["Contact", C.sites.home + "/#contact"]], active: "Résumé", email: R.email });
+
+const evidenced = new Set([...R.experience, ...R.projects].flatMap((x) => x.b.flatMap((b) => b.sk)));
+const bullets = (arr) => `<ul class="bl">${arr.map((b) => `<li data-sk="${e(b.sk.join("|"))}">${b.x}</li>`).join("")}</ul>`;
+const SECS = [["experience", "Experience"], ["projects", "Projects"], ["skills", "Skills"], ["achievements", "Achievements"], ["leadership", "Leadership"], ["certifications", "Certifications"], ["education", "Education"]];
+
+$("#app").innerHTML = `
+<section class="rhero"><div class="wrap">
+  <div class="lbl cap">resume.harshgiri.site</div>
+  <h1 class="big">${e(R.name)}</h1>
+  <p class="role"><b>${e(R.role)}</b> — RAG, guardrails and agents, shipped to production.</p>
+  <div class="printc">${e(R.loc)} · ${e(R.email)} · linkedin.com/in/giri-harsh · github.com/giri-harsh · harshgiri.site</div>
+  <div class="tldr" aria-label="30-second summary">${R.tldr.map(([v, l]) => `<div><b>${e(v)}</b><span>${e(l)}</span></div>`).join("")}</div>
+</div></section>
+
+<div class="lay">
+  <aside class="rail">
+    <div class="contact">
+      <span>${dd("arrow")} ${e(R.loc)}</span>
+      <a href="mailto:${R.email}">${dd("mail")} ${e(R.email)}</a>
+      ${R.links.map(([t, u, k]) => `<a href="${u}" target="_blank" rel="noopener">${dd(k)} ${t}</a>`).join("")}
+    </div>
+    <div class="actions">
+      <a class="btn hot w" href="Harsh_Giri_Resume.pdf" download>${dd("doc")} Download PDF</a>
+      <button class="btn" type="button" id="print">Print</button>
+      <button class="btn" type="button" id="copy">Copy email</button>
+    </div>
+    <button class="tg" type="button" id="nums" aria-pressed="false"><span>Highlight numbers</span><i></i></button>
+    <nav class="toc" id="toc">${SECS.map(([id, t]) => `<a href="#${id}">${t}</a>`).join("")}</nav>
+  </aside>
+
+  <article class="sheet">
+    <section class="sec" id="experience"><h2>Experience <small>0${R.experience.length}</small></h2>
+      ${R.experience.map((x) => `<div class="item"><div class="ih"><h3>${e(x.t)} <span>· ${e(x.org)}</span></h3><span class="w cap">${e(x.when)}</span></div>${bullets(x.b)}</div>`).join("")}
+    </section>
+    <section class="sec" id="projects"><h2>Projects <small>0${R.projects.length}</small></h2>
+      ${R.projects.map((x) => `<div class="item"><div class="ih"><h3>${e(x.t)}${x.sub ? ` <span>· ${e(x.sub)}</span>` : ""}</h3></div><div class="st">${e(x.stack)}</div>
+        <div class="ilinks noprint"><a href="${x.gh}" target="_blank" rel="noopener">${dd("git")} GitHub</a>${x.live ? `<a href="${x.live}" target="_blank" rel="noopener">${dd("arrow")} Demo</a>` : ""}<a href="${x.deep}">${dd("doc")} Case study</a></div>${bullets(x.b)}</div>`).join("")}
+    </section>
+    <section class="sec" id="skills"><h2>Technical skills <small>click one</small></h2>
+      <div class="skg">${R.skills.map(([g, list]) => `<div><h3 class="cap">${e(g)}</h3><div class="skills">${list.map((s) => `<button type="button" class="${evidenced.has(s) ? "ev" : ""}" data-s="${e(s)}" aria-pressed="false">${e(s)}</button>`).join("")}</div></div>`).join("")}</div>
+      <p class="fnote cap noprint">● = click to highlight the bullets that prove it</p>
+    </section>
+    <section class="sec" id="achievements"><h2>Achievements <small>hackathons</small></h2>
+      <div class="ach">${R.achievements.map(([t, r, d]) => `<div><em class="badge ${r === "Finalist" ? "win" : ""}" style="font-style:normal;justify-self:start">${r === "Finalist" ? dd("trophy") : ""}${e(r)}</em><b>${e(t)}</b><span>${e(d)}</span></div>`).join("")}</div>
+    </section>
+    <section class="sec" id="leadership"><h2>Leadership</h2>
+      ${R.leadership.map(([t, r, d]) => `<div class="item"><div class="ih"><h3>${e(t)} <span>· ${e(r)}</span></h3></div><ul class="bl"><li data-sk="">${e(d)}</li></ul></div>`).join("")}
+    </section>
+    <section class="sec" id="certifications"><h2>Certifications</h2>
+      <div class="certs2">${R.certs.map(([t, o, u]) => `<a href="${u}" target="_blank" rel="noopener" aria-label="${e(t)} — view certificate (opens in a new tab)"><span><b>${e(t)}</b><small>${e(o)} · view certificate ↗</small></span>${dd("arrow")}</a>`).join("")}</div>
+    </section>
+    <section class="sec" id="education"><h2>Education</h2>
+      <div class="item"><div class="ih"><h3>${e(R.education.school)}</h3><span class="w cap">${e(R.education.when)}</span></div><div class="st">${e(R.education.deg)} · ${e(R.education.where)}</div></div>
+    </section>
+  </article>
+</div>`;
+
+/* skill → evidence highlighting */
+const fbar = $("#fbar");
+function filt(skill) {
+  $$(".skills button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.s === skill));
+  if (!skill) { document.body.classList.remove("filtering"); $$("ul.bl li").forEach((l) => l.classList.remove("hit")); fbar.classList.remove("on"); return; }
+  document.body.classList.add("filtering");
+  let n = 0; $$("ul.bl li").forEach((l) => { const h = l.dataset.sk.split("|").includes(skill); l.classList.toggle("hit", h); if (h) n++; });
+  $("#ftext").textContent = n ? `${skill} — ${n} bullet${n > 1 ? "s" : ""} of evidence` : `${skill} — listed skill`;
+  fbar.classList.add("on");
+  const first = $("ul.bl li.hit"); if (first) first.scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "center" });
+}
+$$(".skills button").forEach((b) => b.addEventListener("click", () => filt(b.getAttribute("aria-pressed") === "true" ? null : b.dataset.s)));
+$("#fclear").onclick = () => filt(null);
+addEventListener("keydown", (ev) => { if (ev.key === "Escape") filt(null); });
+
+/* toggles + actions */
+$("#nums").addEventListener("click", (ev) => { const on = document.body.classList.toggle("nums"); ev.currentTarget.setAttribute("aria-pressed", on); });
+$("#print").onclick = () => print();
+$("#copy").onclick = async () => { try { await navigator.clipboard.writeText(R.email); } catch (err) {} const t = $("#toast"); t.classList.add("on"); setTimeout(() => t.classList.remove("on"), 1400); };
+
+/* scroll-spy */
+const tl = $$("#toc a");
+const io = new IntersectionObserver((es) => es.forEach((x) => { if (x.isIntersecting) tl.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + x.target.id)); }), { rootMargin: "-35% 0px -60% 0px" });
+SECS.forEach(([id]) => io.observe(document.getElementById(id)));
+
+HG.magnet($$(".btn"));
+if (window.gsap && !RM) {
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+  document.fonts.ready.then(() => {
+    SplitText.create(".rhero h1", { type: "words,chars", mask: "chars", onSplit: (s) => gsap.from(s.chars, { yPercent: 110, stagger: .035, duration: 1.1, ease: "expo.out" }) });
+    gsap.from(".rhero .role, .rhero .lbl", { y: 20, opacity: 0, duration: 1, delay: .35, ease: "expo.out" });
+    gsap.from(".tldr div", { y: 30, opacity: 0, rotate: (i) => [-2, 1, -1, 2][i], stagger: .08, duration: .9, delay: .45, ease: "back.out(1.6)" });
+    gsap.from(".rail > *", { x: -20, opacity: 0, stagger: .06, duration: .8, delay: .3, ease: "expo.out" });
+    $$(".sec").forEach((s) => gsap.from(s.querySelectorAll("h2, .item, .skg > div, .ach div, .certs2 a"), { y: 26, opacity: 0, stagger: .05, duration: .8, ease: "expo.out", scrollTrigger: { trigger: s, start: "top 85%" } }));
+  });
+}
+</script>
+</body>
+</html>
